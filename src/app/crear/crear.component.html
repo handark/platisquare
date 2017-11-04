@@ -1,0 +1,47 @@
+<div class="container container-mt">
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/lugares">Lugares</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Crear Negocio</li>
+      </ol>
+    </nav>
+
+
+    <form>
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" [(ngModel)]="lugar.nombre" name="nombre" >
+      </div>
+      <div class="form-group">
+        <label>Distancia</label>
+        <input type="number" class="form-control" [(ngModel)]="lugar.distancia" name="distancia" >
+      </div>
+      <div class="form-group">
+        <label>Cercania</label>
+        <input type="number" class="form-control" [(ngModel)]="lugar.cercania" name="cercania" >
+      </div>
+      <div class="form-group">
+        <label>Descripción</label>
+        <textarea  class="form-control" cols="30" rows="3" [(ngModel)]="lugar.descripcion" name="descripcion" ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Plan</label>
+        <input type="text" class="form-control" [(ngModel)]="lugar.plan" name="plan" >
+      </div>
+      <div class="form-group">
+        <label>Calle y Numero</label>
+        <input type="text" class="form-control" [(ngModel)]="lugar.calle" name="calle" >
+      </div>
+      <div class="form-group">
+        <label>Ciudad</label>
+        <input type="text" class="form-control" [(ngModel)]="lugar.ciudad" name="ciudad" >
+      </div>
+      <div class="form-group">
+        <label>País</label>
+        <input type="text" class="form-control" [(ngModel)]="lugar.pais" name="pais" >
+      </div>
+      <button (click)="guardarLugar()" class="btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-default" routerLink="/lugares" >Cancelar</button>
+    </form>
+
+  </div>

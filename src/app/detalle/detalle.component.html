@@ -1,0 +1,24 @@
+
+
+<div class="container container-mt">
+
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/lugares">Lugares</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{lugar.nombre}}</li>
+    </ol>
+  </nav>
+
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">{{lugar.nombre}}</h4>
+      <small>{{lugar.distancia}} Km</small>
+      <p class="card-text">
+        {{lugar.description}}
+      </p>
+      <b>Suscripcion: {{lugar.plan}}</b>
+    </div>
+  </div>
+
+
+</div>
